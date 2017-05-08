@@ -46,7 +46,7 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "HomeTableViewCell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? HomeTableViewCell else {
-            fatalError("The dequeued cell is not an instance of HomeTableView Cell")
+            fatalError("The dequeued cell is not an instance of HomeTableViewCell")
         }
         
         let step = stepsCells[indexPath.row]
