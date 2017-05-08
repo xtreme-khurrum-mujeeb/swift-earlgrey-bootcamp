@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE28504F1EC0C29D00880C99 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE28504E1EC0C29D00880C99 /* HomeTableViewCell.swift */; };
+		AE2850511EC0C43700880C99 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2850501EC0C43700880C99 /* HomeTableViewController.swift */; };
 		AE3706791EC0B8D100503AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3706781EC0B8D100503AF0 /* AppDelegate.swift */; };
 		AE37067B1EC0B8D100503AF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37067A1EC0B8D100503AF0 /* ViewController.swift */; };
 		AE37067E1EC0B8D200503AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE37067C1EC0B8D200503AF0 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE28504E1EC0C29D00880C99 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		AE2850501EC0C43700880C99 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		AE3706751EC0B8D100503AF0 /* swift-earlgrey-bootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-earlgrey-bootcamp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3706781EC0B8D100503AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE37067A1EC0B8D100503AF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				AE3706781EC0B8D100503AF0 /* AppDelegate.swift */,
 				AE37067A1EC0B8D100503AF0 /* ViewController.swift */,
 				AE37067C1EC0B8D200503AF0 /* Main.storyboard */,
+				AE28504E1EC0C29D00880C99 /* HomeTableViewCell.swift */,
+				AE2850501EC0C43700880C99 /* HomeTableViewController.swift */,
 				AE37067F1EC0B8D200503AF0 /* Assets.xcassets */,
 				AE3706811EC0B8D200503AF0 /* LaunchScreen.storyboard */,
 				AE3706841EC0B8D200503AF0 /* Info.plist */,
@@ -198,6 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2850511EC0C43700880C99 /* HomeTableViewController.swift in Sources */,
+				AE28504F1EC0C29D00880C99 /* HomeTableViewCell.swift in Sources */,
 				AE37067B1EC0B8D100503AF0 /* ViewController.swift in Sources */,
 				AE3706791EC0B8D100503AF0 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +413,7 @@
 				AE3706941EC0B8D200503AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE3706951EC0B8D200503AF0 /* Build configuration list for PBXNativeTarget "swift-earlgrey-bootcampTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				AE3706971EC0B8D200503AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
