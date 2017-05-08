@@ -35,11 +35,14 @@
                                         <rect key="frame" x="104" y="170.5" width="135" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TW-VK-3Kc">
                                         <rect key="frame" x="118.5" y="350.5" width="106" height="30"/>
                                         <state key="normal" title="This is a button"/>
+                                        <connections>
+                                            <action selector="step1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vbn-fz-AcJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -51,6 +54,10 @@
                             <constraint firstItem="bmG-Qo-GRV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OZr-Jl-k0B"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="step1Label" destination="Y0z-R5-odl" id="7HI-T6-1SP"/>
+                        <outlet property="step1TextField" destination="8F2-qd-1Uw" id="lnb-iE-vO6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
