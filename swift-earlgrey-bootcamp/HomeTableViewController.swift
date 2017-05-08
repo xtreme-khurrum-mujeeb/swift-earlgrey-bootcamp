@@ -55,6 +55,19 @@ class HomeTableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            self.performSegue(withIdentifier: "Step1", sender: self)
+            break
+        case 1:
+            self.performSegue(withIdentifier: "Step2", sender: self)
+            break
+        default:
+            break
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
