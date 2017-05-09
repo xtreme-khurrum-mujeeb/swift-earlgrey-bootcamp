@@ -63,6 +63,9 @@ class HomeTableViewController: UITableViewController {
         case 1:
             self.performSegue(withIdentifier: "Step2", sender: self)
             break
+        case 2:
+            self.performSegue(withIdentifier: "Step3", sender: self)
+            break
         default:
             break
         }

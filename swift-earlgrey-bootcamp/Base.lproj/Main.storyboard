@@ -26,8 +26,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="171.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mr-5w-Dpv">
-                                            <rect key="frame" x="28" y="56" width="270" height="59"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mr-5w-Dpv">
+                                            <rect key="frame" x="8" y="56" width="359" height="59"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                             <nil key="textColor"/>
@@ -49,11 +49,12 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="Step1" id="wdU-FS-A2x"/>
                         <segue destination="Yq7-6c-sJE" kind="show" identifier="Step2" id="acG-N8-2GN"/>
+                        <segue destination="Mqv-It-Ekw" kind="show" identifier="Step3" id="Ck9-yZ-UAs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sj0-hq-xY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206" y="36"/>
+            <point key="canvasLocation" x="205.59999999999999" y="35.532233883058474"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -106,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1823" y="-651"/>
+            <point key="canvasLocation" x="1822" y="-1044"/>
         </scene>
         <!--Step2 Table View Controller-->
         <scene sceneID="zk0-NM-dSK">
@@ -121,7 +122,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ISY-Mh-Mpr" id="6fh-W6-Ffr">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZG-ah-erD">
@@ -146,7 +147,50 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsK-Ti-JjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1823.2" y="43.628185907046479"/>
+            <point key="canvasLocation" x="1822" y="-270"/>
+        </scene>
+        <!--Step3 View Controller-->
+        <scene sceneID="ru9-rH-d9Y">
+            <objects>
+                <viewController id="Mqv-It-Ekw" customClass="Step3ViewController" customModule="swift_earlgrey_bootcamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FzP-d8-7o1"/>
+                        <viewControllerLayoutGuide type="bottom" id="qGh-hl-PgX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Ua-bi-W8N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uZa-iH-VYD">
+                                <rect key="frame" x="0.0" y="287" width="375" height="380"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rME-yy-3CU">
+                                <rect key="frame" x="0.0" y="33" width="375" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="254" id="VFJ-mn-6pm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uZa-iH-VYD" firstAttribute="bottom" secondItem="qGh-hl-PgX" secondAttribute="top" id="KcM-f1-G2x"/>
+                            <constraint firstItem="uZa-iH-VYD" firstAttribute="top" secondItem="rME-yy-3CU" secondAttribute="bottom" id="PUY-ad-Myj"/>
+                            <constraint firstItem="rME-yy-3CU" firstAttribute="leading" secondItem="0Ua-bi-W8N" secondAttribute="leading" id="bhu-gZ-IP4"/>
+                            <constraint firstItem="rME-yy-3CU" firstAttribute="leading" secondItem="uZa-iH-VYD" secondAttribute="leading" id="iLS-n1-RQk"/>
+                            <constraint firstItem="rME-yy-3CU" firstAttribute="top" secondItem="0Ua-bi-W8N" secondAttribute="topMargin" constant="33" id="kf0-iB-kuB"/>
+                            <constraint firstAttribute="trailing" secondItem="rME-yy-3CU" secondAttribute="trailing" id="rbm-Gb-zk7"/>
+                            <constraint firstItem="rME-yy-3CU" firstAttribute="trailing" secondItem="uZa-iH-VYD" secondAttribute="trailing" id="urh-HG-6AW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="rME-yy-3CU" id="b0V-tS-1eO"/>
+                        <outlet property="weatherTable" destination="uZa-iH-VYD" id="dsi-vz-UPV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Py-v5-3SB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1822" y="431"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WRK-D5-d1c">
