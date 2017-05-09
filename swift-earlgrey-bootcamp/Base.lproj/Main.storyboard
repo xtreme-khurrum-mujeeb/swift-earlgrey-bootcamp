@@ -50,6 +50,7 @@
                         <segue destination="BYZ-38-t0r" kind="show" identifier="Step1" id="wdU-FS-A2x"/>
                         <segue destination="Yq7-6c-sJE" kind="show" identifier="Step2" id="acG-N8-2GN"/>
                         <segue destination="Mqv-It-Ekw" kind="show" identifier="Step3" id="Ck9-yZ-UAs"/>
+                        <segue destination="WeO-3j-uw9" kind="show" identifier="Step4" id="gLl-Ow-Vty"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sj0-hq-xY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -107,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1822" y="-1044"/>
+            <point key="canvasLocation" x="1564" y="-1489"/>
         </scene>
         <!--Step2 Table View Controller-->
         <scene sceneID="zk0-NM-dSK">
@@ -147,7 +148,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsK-Ti-JjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1822" y="-270"/>
+            <point key="canvasLocation" x="1564" y="-797"/>
         </scene>
         <!--Step3 View Controller-->
         <scene sceneID="ru9-rH-d9Y">
@@ -190,7 +191,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Py-v5-3SB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1822" y="431"/>
+            <point key="canvasLocation" x="1564" y="-111"/>
+        </scene>
+        <!--Step4 View Controller-->
+        <scene sceneID="ag0-Rg-5cr">
+            <objects>
+                <viewController id="WeO-3j-uw9" customClass="Step4ViewController" customModule="swift_earlgrey_bootcamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yEL-wQ-Q9f"/>
+                        <viewControllerLayoutGuide type="bottom" id="IKu-7D-31c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lHN-R5-TBY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ia1-7K-7j2">
+                                <rect key="frame" x="20" y="140" width="334" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="zr3-2o-SBI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phL-fY-vrF">
+                                <rect key="frame" x="151.5" y="375" width="71" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="step4Button:" destination="WeO-3j-uw9" eventType="touchUpInside" id="xdg-aU-dwq"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fp7-CK-6L9">
+                                <rect key="frame" x="82" y="509" width="211" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="AL9-Jw-ddE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fp7-CK-6L9" firstAttribute="centerX" secondItem="ia1-7K-7j2" secondAttribute="centerX" id="MD9-qN-FnI"/>
+                            <constraint firstItem="ia1-7K-7j2" firstAttribute="top" secondItem="yEL-wQ-Q9f" secondAttribute="bottom" constant="76" id="YVU-zF-cwG"/>
+                            <constraint firstItem="phL-fY-vrF" firstAttribute="centerX" secondItem="ia1-7K-7j2" secondAttribute="centerX" id="bSA-xE-oFj"/>
+                            <constraint firstItem="fp7-CK-6L9" firstAttribute="leading" secondItem="lHN-R5-TBY" secondAttribute="leadingMargin" constant="66" id="cOz-VL-16z"/>
+                            <constraint firstItem="ia1-7K-7j2" firstAttribute="centerX" secondItem="lHN-R5-TBY" secondAttribute="centerX" id="jhj-mq-HGH"/>
+                            <constraint firstItem="IKu-7D-31c" firstAttribute="top" secondItem="fp7-CK-6L9" secondAttribute="bottom" constant="65" id="r9f-oU-UYo"/>
+                            <constraint firstItem="phL-fY-vrF" firstAttribute="top" secondItem="ia1-7K-7j2" secondAttribute="bottom" constant="23" id="vBC-Gw-7ad"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="step4DateLabel" destination="fp7-CK-6L9" id="xHI-o3-gmi"/>
+                        <outlet property="step4Label" destination="ia1-7K-7j2" id="ELF-xW-RYn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVk-VI-slv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1564" y="582.45877061469275"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WRK-D5-d1c">
