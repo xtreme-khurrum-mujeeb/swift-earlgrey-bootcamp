@@ -23,17 +23,22 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="172"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UaQ-Nv-UEa" id="A2j-6J-36c">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="171.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mr-5w-Dpv">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mr-5w-Dpv">
                                             <rect key="frame" x="8" y="56" width="359" height="59"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6Mr-5w-Dpv" firstAttribute="top" secondItem="A2j-6J-36c" secondAttribute="topMargin" constant="48" id="HeX-vB-QQX"/>
+                                        <constraint firstItem="6Mr-5w-Dpv" firstAttribute="centerY" secondItem="A2j-6J-36c" secondAttribute="centerY" id="Ki4-ND-ddW"/>
+                                        <constraint firstItem="6Mr-5w-Dpv" firstAttribute="centerX" secondItem="A2j-6J-36c" secondAttribute="centerX" id="KsD-Rh-OHm"/>
+                                        <constraint firstItem="6Mr-5w-Dpv" firstAttribute="leading" secondItem="A2j-6J-36c" secondAttribute="leadingMargin" id="S9F-Wd-ehW"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="homeLabel" destination="6Mr-5w-Dpv" id="4BZ-O6-EK4"/>
@@ -57,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="205.59999999999999" y="35.532233883058474"/>
         </scene>
-        <!--View Controller-->
+        <!--Step1 View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swift_earlgrey_bootcamp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Step1ViewController" customModule="swift_earlgrey_bootcamp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -88,7 +93,7 @@
                                         <rect key="frame" x="118.5" y="350.5" width="106" height="30"/>
                                         <state key="normal" title="This is a button"/>
                                         <connections>
-                                            <action selector="step1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vbn-fz-AcJ"/>
+                                            <action selector="step1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Bm-fk-CRL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -102,8 +107,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="step1Label" destination="Y0z-R5-odl" id="7HI-T6-1SP"/>
-                        <outlet property="step1TextField" destination="8F2-qd-1Uw" id="lnb-iE-vO6"/>
+                        <outlet property="step1Label" destination="Y0z-R5-odl" id="gDN-cn-RY9"/>
+                        <outlet property="step1TextField" destination="8F2-qd-1Uw" id="d3J-WU-13M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

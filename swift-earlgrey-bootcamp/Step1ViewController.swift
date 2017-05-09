@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  Step1ViewController.swift
 //  swift-earlgrey-bootcamp
 //
-//  Created by Pivotal on 2017-05-08.
+//  Created by Pivotal on 2017-05-09.
 //
 //
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class Step1ViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Properties
     @IBOutlet weak var step1Label: UILabel!
@@ -17,17 +17,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         // tie in text field to delegate
         step1TextField.delegate = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // hide keyboard
@@ -42,6 +40,5 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func step1Button(_ sender: UIButton) {
         step1Label.text = "Button pressed"
     }
-    
-}
 
+}
