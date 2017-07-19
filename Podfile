@@ -7,9 +7,10 @@ target 'swift-earlgrey-bootcamp' do
 
   # Pods for swift-earlgrey-bootcamp
 
-  target 'swift-earlgrey-bootcampTests' do
-    inherit! :search_paths
-    # Pods for testing
+  target 'swift-earlgrey-bootcampUITests' do
+  	use_frameworks! # Required for Swift Test Targets only
+  	inherit! :search_paths # Required for not double-linking libraries in the app and test targets.
+  	pod 'EarlGrey'
   end
 
 end
